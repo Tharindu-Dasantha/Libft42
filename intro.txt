@@ -1,0 +1,420 @@
+
+// this is the *.c in the pset still need libft.h and makefile
+// replace all the voids with appropriate return or input value types (A.K.A variables) and del the space between input and name of the modified ones 
+// fill all the output tabs
+// PART 1 - section A (without malloc)
+
+
+# include <string.h>
+
+#undef bzero
+
+
+void ft_memset (void) {
+    /* 
+    arguments:-
+        The function takes three arguments:
+            s is a pointer to the block of memory to fill.
+            c is the value to fill the memory with. It is usually given as an integer, but it is cast to unsigned char before being used to set the value of the memory.
+            n is the number of bytes to fill with the specified value.
+    */
+    /*
+        description :-  fills a block of memory with a specified value.
+                        "memset" can be used to set all bytes in a block of memory to a specific value, or to set a specific range of bytes in a block of memory to a specific value. 
+                        It is often used to initialize variables or to clear sensitive data from memory before the memory is released or reused. 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (Ben)
+   */
+}
+
+
+void ft_bzero(void *s, size_t n) {
+    /*
+    arguments:-
+        The function takes two arguments:
+            s is a pointer to the block of memory to set to zero.
+            n is the number of bytes to set to zero.
+    */
+    /*
+    description :- 
+        sets all bytes in a block of memory to zero.
+        bzero is similar to the memset function, but it always sets the memory to zero, regardless of the value specified as the second argument.
+         It is often used to initialize variables or to clear sensitive data from memory before the memory is released or reused.
+
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (tharindu)
+   */
+}
+
+
+void ft_memcpy (void) {
+    /*
+    arguments:-
+        The function takes three arguments:
+            dest is a pointer to the destination block of memory, where the copy will be stored.
+            src is a pointer to the source block of memory, from which the data will be copied.
+            n is the number of bytes to copy.
+    */
+    /*
+    description :-
+        memcpy is a function in the C standard library that copies a block of memory from one location to another.
+        memcpy can be used to copy a block of memory from one location to another, or to copy a specific range of bytes from a block of memory to another location.
+        It is often used to copy data between buffers or to copy data from one data structure to another.
+
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_memccpy (void) {
+    /*
+    arguments:-
+        The function takes four arguments:
+            dest is a pointer to the destination block of memory, where the copy will be stored.
+            src is a pointer to the source block of memory, from which the data will be copied.
+            c is the character to stop copying at.
+            n is the maximum number of bytes to copy.
+    */
+    /*
+    description :- 
+        memccpy is a function in the C standard library that copies a block of memory from one location to another, stopping when it encounters a specific character.
+        memccpy can be used to copy a block of memory from one location to another, stopping when it encounters a specific character.
+        It is often used to copy data between buffers or to copy data from one data structure to another, with the added ability to stop copying when a specific character is encountered.
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+void ft_memmove (void) {
+    /*
+    arguments:-
+        The function takes three arguments:
+            dest is a pointer to the destination block of memory, where the copy will be stored.
+            src is a pointer to the source block of memory, from which the data will be copied.
+            n is the number of bytes to copy.
+    */
+    /*
+    description :- 
+        memmove is a function in the C standard library that copies a block of memory from one location to another, even if the source and destination regions overlap.
+        memmove can be used to copy a block of memory from one location to another, even if the source and destination regions overlap.
+        It is similar to the memcpy function, but it is designed to handle overlapping regions correctly.
+        memmove is often used to move data within a buffer or to move data between buffers.
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_memchr (void) {
+    /*
+    arguments:-
+        The function takes three arguments:
+            s is a pointer to the block of memory to search.
+            c is the character to search for.
+            n is the number of bytes to search.
+    */
+    /*
+    description :- 
+        memchr is a function in the C standard library that searches a block of memory for a specific character.
+        memchr can be used to search a block of memory for a specific character.
+        It is often used to search a buffer for a specific character or to search a data structure for a specific field.
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_memcmp (void) {
+    /*
+    arguments:-
+        The function takes three arguments:
+            s1 is a pointer to the first block of memory to compare.
+            s2 is a pointer to the second block of memory to compare.
+            n is the number of bytes to compare.    
+    */
+    /*
+    description :-
+        memcmp is a function in the C standard library that compares two blocks of memory.
+        memcmp can be used to compare two blocks of memory for equality or to determine which block of memory is greater or less than the other.
+        It is often used to compare strings or to compare data structures.
+    */
+   /*
+   output:-
+        The function returns an integer value indicating the result of the comparison:
+            If the two blocks of memory are equal, memcmp returns 0.
+            If the first block of memory is greater than the second block of memory, memcmp returns a positive value.
+            If the first block of memory is less than the second block of memory, memcmp returns a negative value.
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_strlen (void) {
+    /*
+    arguments:-
+        this function takes one argument 
+            s A string
+    */
+    /*
+        description :- 
+            get a string and calculate its length till the '/0'
+    */
+   /*
+   output:-
+        int with the length of the string
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_strlcpy (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_strlcat (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_strchr (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_strrchr (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_strnstr (void) {
+    /*
+    arguments:-
+    */
+    /*
+    description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */   
+}
+
+
+void ft_strncmp (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_atoi (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_isalpha (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_isdigit (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_isalnum (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_isascii (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */   
+}
+
+
+void ft_isprint (void) {
+    /*
+    arguments:-
+    */
+    /*
+    description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_toupper (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
+
+
+void ft_tolower (void) {
+    /*
+    arguments:-
+    */
+    /*
+        description :- 
+    */
+   /*
+   output:-
+   */
+   /*
+        working on :- (type your name here)
+   */
+}
