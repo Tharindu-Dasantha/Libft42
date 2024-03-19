@@ -9,6 +9,7 @@
 /* |----------------------------------------------------------| */
 
 #include "libft.h"
+
 int ft_atoi(const char *str)
 {
     int res = 0;
@@ -27,8 +28,3 @@ int ft_atoi(const char *str)
      res = res * 10 + (*str++ - '0');
     return res*sign;
 }
-// int main(int argc, char *argv[])
-// {
-//     printf("mine:%d\n",ft_atoi(argv[1]));
-//     return 0;
-// }
